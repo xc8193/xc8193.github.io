@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  /* background-color: #991F18;
+  color: #A6FFFE;
+  */
+  font-family: helvetica, verdana, arial, sans-serif;
+  /* background-image: url(../images/spacebackground.jpg); */
+}
+video.bgvid{
+  object-fit: fill;
+  position: fixed;
+  height:100%;
+  width: 100%;
+  z-index: -999;
+}
+
+header {
+  /*background-color: #991F18;
+  color: #A6FFFE;
+  */
+  padding: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+  /* background-image: url(../images/spacebackground.jpg); */
+}
+.bird{
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  height: 40%;
+  width: 26%;
+}
+
+.test {
+	-webkit-animation: test 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: test 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes test {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform: translateX(300%);
+            transform: translateX(300%);
+  }
+}
+.return{
+
+}
+
+
+section.col3 {
+  font-family: 'Dancing Script', cursive;
+  color: #9BAEBF;
+  display: flex;
+  flex-grow: 1;
+  width: auto%;
+  display: flex;
+  padding-left: 3em;
+  padding-right: 3em;
+  justify-content: space-around;
+
+  /* width: 100%; */
+}
+section.col3 Pone{
+  flex-grow:1;
+}
+section.col3 Ptwo{
+  flex-grow: 2;
+}
+section.col3 Pthree{
+  flex-grow:1;
+}
+
+h1 {
+  color: #9B9FF2;
+  font-size: 4em;
+  font-family: Georgia,times,serif;
+  text-transform: uppercase;
+  border-bottom: solid 1px #eee;
+  text-align: center;
+}
+/* specificity */
+H2 {
+  color: #9B9FF2;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  text-align:center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+  text-align: center;
+  color: #9BAEBF;
+}
+nav a{
+    transition: all .5s;
+}
+nav a:link {
+  text-decoration: none;
+}
+nav a:visited {
+  color:#9B9FF2;
+}
+
+nav a:hover  {
+filter:brightness(120%);
+  transform: scale(1.4);
+  /* background: #333; */
+  color:#eee;
+}
+/* nav a:hover .highlight{   dont work for now i wanted to dim the rest of the nav while the hover one is hovered
+  filter:brightness(50%);
+} */
+
+nav a:active {
+  color:#9BAEBF;
+}
+nav a.current {
+  text-decoration: underline;
+}
+
+
+
+/* article h1.sticky {
+  font-size: 4em;
+  text-align: center;
+  position: sticky;
+  top: 1em;
+  width:100%;
+} */
+article {
+  font-family: 'Dancing Script', cursive;
+  color: #9BAEBF;
+  width: 100%;
+  max-width: 1200px;
+  /* old school horizontal centering */
+  margin0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+ div h1 {
+  font-size: 4em;
+  text-align: center;
+  position: sticky;
+  top: 2em;
+  position: -webkit-sticky;
+    border-bottom: none;
+
+  /* width:100%; */
+}
+
+h1.wobble-hor-top:hover { /* i actually dont get what is wrong here iwant to only animate when i hover on the text but it is hovering on the block element but my hover is not on the container, but just the text */
+  position: sticky;
+  -webkit-animation: wobble-hor-top 1.2s both;
+	        animation: wobble-hor-top 1.2s both;
+}
+@keyframes wobble-hor-top {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+            transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+            transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+            transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+            transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+            transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+
+figure {
+  margin-bottom 1em;
+  text-align: center;
+}
+figcaption {
+  color: #9B9FF2;
+}
+figcaption a:visited {
+  color:#9B9FF2;
+}
+figcaption a:hover {
+  color:#eee;
+}
+figcaption a:active {
+  color:#777;
+}
+figcaption a.current {
+  text-decoration: underline;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30em;
+  width: 27%;
+  /* align-content: center; */
+  justify-content: space-around;
+
+}
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* align-content: center; */
+  justify-content: space-around;
+
+}
+ img.rotate-center {
+   height: 25%;
+   width: 25%;
+	-webkit-animation: rotate-center 60s linear infinite ;
+	        animation: rotate-center 60s linear infinite ;
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+div.slide-left{
+  width: 100%;
+  overflow: hidden;
+}
+img:hover{
+animation-play-state: paused;
+}
+.slide-left:hover {
+	-webkit-animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	        animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+.slide-left:hover> img.slideinpic{
+  transition-delay: 2s;
+  opacity: 1;
+}
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-400px);
+            transform: translateX(-400px);
+  }
+}
+
+img.slideinpic{
+  position: absolute;
+  width: 25%;
+  opacity: 0;
+  right: 5%;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
+article.col2 {
+  column-count: 2;
+  column-rule: solid 1px #777;
+  column-gap: 2em;
+  padding-bottom: 3em;
+}
+
+/* col3.firstP{
+flex-grow: 2;
+}
+col3.secondP{
+flex-grow: 1;
+}
+col3.thirdP{
+flex-grow: 1;
+} */
+
+footer {
+  font-family: Georgia,times,serif;
+  text-align: center;
+  background-color: inherit;
+  color: #9B9FF2;
+  padding: 1px;
+}
+
+@media (max-width: 830px) {
+
+
+}
+
+@media (max-width: 600px) {
+  body{
+    column-count: 1;
+    background-image: url("../images/spacebackground.jpg");
+    z-index: -888;
+  }
+  video{
+    opacity: 0;
+  }
+.bird{
+  opacity: 0;
+}
+  section.col3 {
+    width: auto;
+    max-width: auto;
+    display: block;
+    padding-right:2em;
+  }
+
+
+  article.col2{
+    column-count: 1;
+    max-width:none;
+
+  }
+
+  .slide-left:hover {
+  	-webkit-animation: none;
+  	        animation: none;
+  }
+  .slide-left:hover> img.slideinpic{
+    transition-delay: 2s;
+    opacity: 0;
+  }
+
+  article{
+    padding-left: 2em; /*why is there no padding to the right side of the screen tried multiple things doesnt work*/
+  }
+
+}
