@@ -7,19 +7,40 @@
 
 
 
-body {
+/* body {
   /* background-color: #991F18;
   color: #A6FFFE;
-  */
   font-family: helvetica, verdana, arial, sans-serif;
-  /* background-image: url(../images/spacebackground.jpg); */
+  /* background-image: url(../images/spacebackground.jpg);
+} */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  color: #e6e6ff;
+  text-align: center;
 }
-video.bgvid{
+
+
+h2, p, li, a {
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+}
+
+
+/* video.bgvid{
   object-fit: fill;
   position: fixed;
   height:100%;
   width: 100%;
   z-index: -999;
+} */
+.bgvid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 header {
@@ -87,11 +108,12 @@ section.col3 Pthree{
 }
 
 h1 {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);;
   color: #9B9FF2;
   font-size: 4em;
   font-family: Georgia,times,serif;
   text-transform: uppercase;
-  border-bottom: solid 1px #eee;
+  border-bottom: solid 0px #eee;
   text-align: center;
 }
 /* specificity */

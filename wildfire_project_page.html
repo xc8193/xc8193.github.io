@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wildfire Vegetation Loss</title>
+  <link rel="stylesheet" href="Style/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      color: #e6e6ff;
+      text-align: center;
+    }
+
+    header {
+      padding: 80px 20px 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ccccff;
+      margin-bottom: 0.3em;
+      text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+    }
+
+    h2, p, li, a {
+      text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+    }
+
+    h2 {
+      font-weight: 300;
+      color: #aaaaff;
+    }
+
+    nav a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #99ccff;
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 5px #fff;
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0);
+      border-radius: 10px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    ul {
+      text-align: left;
+      display: inline-block;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #99ccff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    a.button:hover {
+      background-color: #ffffff;
+      color: #000;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay loop muted class="bgvid">
+    <source src="video/space2.mp4" type="video/mp4">
+  </video>
+  <header>
+    <h1>Wildfire Vegetation Loss</h1>
+    <h2>Satellite-Based NDVI Analysis (2015–2017)</h2>
+    <nav>
+      <a class="highlight current" href="index.html" >Website and Css</a>
+      <a class="highlight" href="wildfire_project_page.html">Wildfire Project</a>
+      <a class="highlight" href="sql_project_page.html">A small program linked to SQL</a>
+      <a class="highlight" href="soil.html">Metro Speculation project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>
+        This project used Landsat imagery and TerrSet’s IDRISI tools to analyze vegetation loss caused by wildfires across multiple years. By comparing NDVI and NBR indices from 2015, 2016, and 2017, burn severity was classified and mapped using supervised classification, thresholding, and change detection techniques.
+      </p>
+    </section>
+
+    <section>
+      <h2>Methods & Tools</h2>
+      <ul>
+        <li>Landsat 8 satellite imagery (2015–2017)</li>
+        <li>NDVI and NBR calculations for vegetation and burn severity</li>
+        <li>Image processing with TerrSet and ArcGIS</li>
+        <li>Supervised classification, reclassification, mosaicking</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Report</h2>
+      <p>
+        A full summary with maps, charts, and methodology is available below.
+      </p>
+      <a class="button" href="documents/Termprojectpdf.pdf" target="_blank">View Full Report (PDF)</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 xcdiary — Professional, calm, and growing.</p>
+  </footer>
+</body>
+</html>
