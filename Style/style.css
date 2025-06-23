@@ -339,6 +339,16 @@ footer {
   color: #9B9FF2;
   padding: 1px;
 }
+.intro-one,
+.intro-two {
+  font-size: 1.5em;
+  color: #fbd1ff;
+  line-height: 1.6;
+  display: block;
+  margin-bottom: 1em;
+  text-align: left;
+  margin-left: 2em;
+}
 
 @media (max-width: 830px) {
 
@@ -383,5 +393,22 @@ footer {
   article{
     padding-left: 2em; /*why is there no padding to the right side of the screen tried multiple things doesnt work*/
   }
+  Pone {
+    font-size: 1.5em;
+    color: #fbd1ff;
+    line-height: 1.6;
+    display: block;
+    margin-bottom: 1em;
+  }
 
+  Ptwo {
+    font-size: 1.5em;
+    color: #fbd1ff;
+    line-height: 1.6;
+    display: block;
+  }
+ p {
+   font-size: 5em !important;
+
+ }
 }
